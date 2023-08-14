@@ -1,0 +1,15 @@
+<div class="tw-flex tw-flex-wrap  first-letter:">
+    <div class="tw-w-1/4 tw-cursor-pointer" [routerLink]="['/products/'+p.id]" *ngFor="let p of products">
+        <div class="tw-p-2">
+            <div>
+                <img [src]="p.thumbnail">
+            </div>
+            <h3>{{p.title}}</h3>
+            <p>{{p.description}}</p>
+            <h3>{{p.price}}</h3>
+            <h4>{{p.rating}}</h4>
+            <h4>{{p.brand}}</h4>
+            <h5>{{p.category}}</h5>
+        </div>
+    </div>
+</div>
